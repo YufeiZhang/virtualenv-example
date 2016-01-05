@@ -2,4 +2,9 @@
 
 import requests
 
-import requests.__version__
+print requests.__version__
+
+response = requests.get('http://www.google.ca')
+print response.status_code
+
+print response.text
